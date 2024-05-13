@@ -53,20 +53,56 @@ section {
   background-color: #a8bf93;
 }
 
-.japanese-style-right-wrapper h4 {
-  writing-mode: vertical-rl;
-  font-family: "Noto Serif JP", serif;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 40px;
-  margin: auto;
-  padding-top: 20px;
+/*.japanese-style-right-wrapper h4 {*/
+/*  writing-mode: vertical-rl;*/
+/*  font-family: "Noto Serif JP", serif;*/
+/*  font-weight: 200;*/
+/*  font-style: normal;*/
+/*  font-size: 40px;*/
+/*  margin: auto;*/
+/*  padding-top: 20px;*/
+/*}*/
+
+.right-left-wrapper {
+  display: flex;
+  align-items: center
 }
+
+.right-left-wrapper > div {
+  width: 50px;
+  height: 50px;
+  border-radius: 90%
+}
+
+.right-left-wrapper > div:nth-child(1),
+.right-left-wrapper > div:nth-child(4),
+.right-left-wrapper > div:nth-child(7),
+.right-left-wrapper > div:nth-child(10),
+.right-left-wrapper > div:nth-child(13){
+  background-color: rgba(166,165,196,0.5);
+}
+
+.right-left-wrapper > div:nth-child(2),
+.right-left-wrapper > div:nth-child(5),
+.right-left-wrapper > div:nth-child(8),
+.right-left-wrapper > div:nth-child(11),
+.right-left-wrapper > div:nth-child(14){
+  background-color: rgba(187,200,230,0.5);
+}
+
+.right-left-wrapper > div:nth-child(3),
+.right-left-wrapper > div:nth-child(6),
+.right-left-wrapper > div:nth-child(9),
+.right-left-wrapper > div:nth-child(12),
+.right-left-wrapper > div:nth-child(15){
+  background-color: rgba(139,150,141,0.5);
+}
+
 
 .japanese-style-right-wrapper > .flex-wrapper {
   display: flex;
   height: 70%;
-} 
+}
 
 .japanese-style-right-wrapper .right-left-wrapper {
   width: 69%;
@@ -78,4 +114,17 @@ section {
   width: 31%;
   height: 100%;
   background-color: #b4866b;
+}
+
+@media screen and (max-width:540px) {
+  .right-left-wrapper > div:nth-child(8),
+  .right-left-wrapper > div:nth-child(9),
+  .right-left-wrapper > div:nth-child(10),
+  .right-left-wrapper > div:nth-child(11),
+  .right-left-wrapper > div:nth-child(12),
+  .right-left-wrapper > div:nth-child(13),
+  .right-left-wrapper > div:nth-child(14),
+  .right-left-wrapper > div:nth-child(15) {
+    display: none;
+  }
 }
