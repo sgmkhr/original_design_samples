@@ -8,21 +8,18 @@ header {
   height: 300px;
 }
 
-h1, h2 {
+h1 {
   text-align: center;
   margin: 5px;
   font-family: "Briem Hand", cursive;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-}
-
-h1 {
   line-height: 300px;
 }
 
 section {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 /*以下、japanese style sampleのcss*/
@@ -115,6 +112,36 @@ section {
   height: 100%;
   background-color: #b4866b;
 }
+
+/*以下、organic style*/
+.organic-style-main-wrapper {
+  height: 600px;
+  background-image: url(images/organic.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0
+}
+
+.organic-style-main-wrapper > .background-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.organic-style-main-wrapper h2 {
+  padding-left: 20%;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 300px;
+}
+
 
 @media screen and (max-width:540px) {
   .right-left-wrapper > div:nth-child(8),
